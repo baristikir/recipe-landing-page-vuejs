@@ -1,0 +1,49 @@
+// ****************
+// * Fonts Import *
+// ****************
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');$montserrat: 'Montserrat', sans-serif;
+$playfair: 'Playfair Display', serif;
+
+// *******************
+// * Color Variables *
+// *******************
+$black: black;
+$white: white;
+$gray-primary: #333333;
+$gray-second: #BDBDBD;
+$gray-tertiary: #4F4F4F;
+$orange: #F2994A;
+
+// **************
+// * Font Sizes *
+// **************
+$title-desktop:      48px;
+$title-tablet:       36px;
+$title-mobile:       24px;
+
+$normal-text:        14px;
+
+$heading-desktop:    24px;
+$heading-mobile:     18px;
+
+$subheading-desktop: 18px;
+$subheading-mobile:  16px;
+
+$ingredients-desktop:16px;
+$ingredients-mobile: 14px;
+
+$info-desktop:       14px;
+$info-mobile:        10px;
+
+// ******************
+// * Font Typefaces *
+// ******************
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+// ***************
+// * Font Styles *
+// ***************
+$normal: normal;
+$italic: italic;

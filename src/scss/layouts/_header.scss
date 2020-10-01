@@ -1,0 +1,49 @@
+@import "../variables";
+@import "../mixins";
+@import "../globals";
+// * Header Layout Styling * //
+.header{
+    max-width: 422px;
+    text-align: left;
+
+    @include breakpoint('s'){
+        max-width: 600px;
+    }
+
+    &__title{
+        padding-top: 14px;
+        font-family: $playfair;
+        font-weight: $bold;
+        font-size: $title-mobile;
+        margin: 0;
+
+        @include breakpoint('s'){
+            padding-top: 32px;
+            font-size: $title-tablet;
+        }
+        @include breakpoint('m'){
+            font-size: $title-desktop;
+            padding-top: 52px;
+        }
+    }
+    &__info{
+        padding-top: 12px;
+        flex-direction: row;
+        align-items: flex-start;
+
+        img{
+            padding-top: 6px;
+            padding-right: 8px;
+        }
+        .header__description{
+            font-size: $subheading-mobile;
+            font-weight: $regular;
+            font-style: $italic;
+            margin: 0;
+
+            @include breakpoint('s'){
+                font-size: $subheading-desktop;
+            }
+        }
+    }
+}
