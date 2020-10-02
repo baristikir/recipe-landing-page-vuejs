@@ -36,13 +36,13 @@
             padding-right: 8px;
         }
         .header__description{
-            font-size: $subheading-mobile;
+            font-size: $normal-mobile-text;
             font-weight: $regular;
             font-style: $italic;
             margin: 0;
 
             @include breakpoint('s'){
-                font-size: $subheading-desktop;
+                font-size: $normal-text;
             }
         }
     }

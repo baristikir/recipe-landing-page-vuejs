@@ -10,7 +10,7 @@ export default {
 
 <style lang="scss">
 @import "../../scss/mixins";
-  .cover-image {
+.cover-image {
     padding-top: 12px;
     width: 335px;
     height: 208px;
