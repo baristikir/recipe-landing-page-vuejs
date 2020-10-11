@@ -6,8 +6,7 @@
         <div v-for="(ingredient, index) in recipeElement.ingredients" :key="index">
         <label class="ingredient__info">
             <input type="checkbox" class="ingredient__info-checkbox" />
-            <span class="ingredient__info-text">
-                {{ingredient}}</span>
+            <span class="ingredient__info-text" v-html="ingredient"></span>
         </label>
         </div>
     </div>
