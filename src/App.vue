@@ -5,10 +5,13 @@
     :description="recipe.description"
   />
   <ImageCover/>
-  <section>
+  <section class="flex content-section">
     <Ingredients
       :recipeElements="recipe.elements">
     </Ingredients>
+    <Card
+     :recipeInfo="recipe.infos">
+     </Card>
   </section>
   <Footer/>
 </div>
@@ -19,6 +22,7 @@ import Header from './components/layouts/Header.vue'
 import Footer from './components/layouts/Footer.vue'
 import ImageCover from './components/layouts/Image-Cover.vue'
 import Ingredients from './components/layouts/Ingredients.vue'
+import Card from './components/layouts/Card.vue'
 
 export default {
   name: 'App',
@@ -26,6 +30,7 @@ export default {
     Header,
     ImageCover,
     Ingredients,
+    Card,
     Footer,
   },
   data(){
@@ -47,7 +52,32 @@ export default {
             ],
           },
         ],
-
+        infos: [
+              {
+                heading: "Yields",
+                data: "12 servings",
+                icon: "local_dining",
+                color: "icon-orange",
+              },
+              {
+                heading: "Prep time",
+                data: "45 minutes",
+                icon: "schedule",
+                color: "icon-black",
+              },
+              {
+                heading: "Cook time",
+                data: "1 hour",
+                icon: "schedule",
+                color: "icon-black",
+              },
+              {
+                heading: "Total time",
+                data: "7,75 hours",
+                icon: "schedule",
+                color: "icon-black",
+              },
+            ],
       }
     }
   }
@@ -55,5 +85,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./scss/variables";
+@import "./scss/mixins";
+@import "./scss/globals";
+.content-section{
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
+  @include breakpoint(s){
+    flex-direction: row;
+  }
+}
 </style>

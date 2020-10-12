@@ -28,12 +28,18 @@ export default {
 @import "../../scss/globals";
 
 .ingredients__section{
-    padding-top: 48px;
+    order: 2;
+    @include breakpoint(s){
+        width: 60%;
+        order: 0;
+    }
+
     &-heading{
         font-family: $playfair;
         font-size: $heading-mobile;
         font-weight: $bold;
-
+        margin: 0;
+        
         @include breakpoint('s'){
             font-size: $heading-desktop;
         }
