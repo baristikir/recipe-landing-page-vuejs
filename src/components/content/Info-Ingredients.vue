@@ -34,8 +34,8 @@ export default {
     font-size: $subheading-mobile;
     font-weight: $regular;
     font-style: $italic;
-    color: $gray-second;
-    
+    color: $gray-primary;
+
     @include breakpoint('s'){
         font-size: $subheading-desktop;
     }
