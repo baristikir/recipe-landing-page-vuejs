@@ -57,6 +57,8 @@ export default {
 // * Helper Classes * //
 // ****************** //
 .instructions-partial-width{
-    width: 60%;
+   @include breakpoint(s){
+        width: 60%;
+    }
 }
 </style>

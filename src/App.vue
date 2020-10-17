@@ -16,6 +16,8 @@
   <div>
     <Instructions 
      :recipeInstructions="recipe.instructions"></Instructions>
+
+     <span class="recipe-link">Source: https://sallysbakingaddiction.com/classic-cheesecake/</span>
   </div>
   <Footer/>
 </div>
@@ -118,6 +120,17 @@ export default {
 
   @include breakpoint(s){
     flex-direction: row;
+  }
+}
+
+.recipe-link{
+  color: $gray-second;
+  font-weight: $regular;
+  font-style: $italic;
+  font-size: $recipe-link-mob;
+
+  @include breakpoint(s){
+    font-size: $recipe-link-desk;
   }
 }
 </style>

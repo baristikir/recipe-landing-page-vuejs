@@ -1,6 +1,6 @@
 <template>
     <footer>
-
+      <span><a href="https://www.brstkr.com">Baris Tikir</a> @ <a href="https://devchallenges.io">DevChallenges</a></span>
     </footer>
 </template>
 
@@ -11,7 +11,33 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../../scss/variables";
+@import "../../scss/mixins";
 footer{
-    
+    position: relative;
+    margin-top: 5.5rem;
+    text-align: center;
+    @include breakpoint('s'){
+        margin-top: 12.5rem;
+    }
+    > span{
+        font-family: $montserrat;
+        font-size: $footer;
+        
+    }
+    > a, a:visited, a:link{
+        text-decoration: none;
+        font-weight: $bold;
+        transition: background-position 275ms ease;
+        background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+        background-clip: text;
+        background-size: 200% 100%;
+        background-position: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover{
+            background-position: 0 100%;
+        }
+    }
 }
 </style>
