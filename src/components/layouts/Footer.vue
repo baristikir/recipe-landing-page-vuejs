@@ -11,8 +11,15 @@ export default {
 </script>
 
 <style lang="scss">
+// ************ //
+// * Import's * //
+// ************ //
 @import "../../scss/variables";
 @import "../../scss/mixins";
+
+// ************ //
+// * Stylings * //
+// ************ //
 footer{
     position: relative;
     margin-top: 5.5rem;

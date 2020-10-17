@@ -31,7 +31,7 @@ export default {
 @import "../../scss/globals";
 .ingredient__heading{
     font-family: $playfair;
-    font-size: $subheading-mobile;
+    font-size: $subheading-desktop;
     font-weight: $regular;
     font-style: $italic;
     color: $gray-primary;
@@ -57,6 +57,10 @@ export default {
     
     &-text{
         margin-left: 1rem;
+        font-size: $ingredients-mobile;
+        @include breakpoint(s){
+            font-size: $ingredients-desktop;
+        }
     }
 }
 

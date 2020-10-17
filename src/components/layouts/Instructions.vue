@@ -7,7 +7,8 @@
             <InstructionsInfoElement
              v-for="(step, index) in recipeInstructions"
             :key="index"
-            :step="step"
+            :step="step.text"
+            :number="index+1"
         ></InstructionsInfoElement>
         </ol>
     </div>
@@ -44,13 +45,9 @@ export default {
 }
 .instructions__section-heading{
     font-family: $playfair;
-    font-size: $heading-mobile;
+    font-size: $instruction-heading;
     font-weight: $bold;
     margin: 0;
-    
-    @include breakpoint('s'){
-        font-size: $heading-desktop;
-    }
 }
 
 // ****************** //
