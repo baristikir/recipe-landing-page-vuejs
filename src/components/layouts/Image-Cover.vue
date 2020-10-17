@@ -9,7 +9,14 @@ export default {
 </script>
 
 <style lang="scss">
+// ************ //
+// * Import's * //
+// ************ //
 @import "../../scss/mixins";
+
+// ************ //
+// * Stylings * //
+// ************ //
 .cover-image {
     padding-top: 12px;
     max-width: 100%;

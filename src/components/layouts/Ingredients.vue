@@ -23,10 +23,16 @@ export default {
 </script>
 
 <style lang="scss">
+// ************ //
+// * Import's * //
+// ************ //
 @import "../../scss/variables";
 @import "../../scss/mixins";
 @import "../../scss/globals";
 
+// ************ //
+// * Stylings * //
+// ************ //
 .ingredients__section{
     order: 2;
     @include breakpoint(s){

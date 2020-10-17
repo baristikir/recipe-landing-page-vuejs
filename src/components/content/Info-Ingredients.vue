@@ -26,9 +26,16 @@ export default {
 </script>
 
 <style lang="scss">
+// ************ //
+// * Import's * //
+// ************ //
 @import "../../scss/variables";
 @import "../../scss/mixins";
 @import "../../scss/globals";
+
+// ************ //
+// * Stylings * //
+// ************ //
 .ingredient__heading{
     font-family: $playfair;
     font-size: $subheading-desktop;
@@ -63,6 +70,10 @@ export default {
         }
     }
 }
+
+// ****************** //
+// * Helper Classes * //
+// ****************** //
 
 // * Icon Color: Color * //
 .checkbox-orange{

@@ -24,10 +24,16 @@ export default {
 </script>
 
 <style lang="scss">
+// ************ //
+// * Import's * //
+// ************ //
 @import "../../scss/variables";
 @import "../../scss/mixins";
 @import "../../scss/globals";
 
+// ************ //
+// * Stylings * //
+// ************ //
 .info__section{
     display: flex;
     flex-direction: column;
