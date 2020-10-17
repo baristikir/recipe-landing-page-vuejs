@@ -35,6 +35,8 @@ export default {
     font-weight: $regular;
     font-style: $italic;
     color: $gray-primary;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
     @include breakpoint('s'){
         font-size: $subheading-desktop;
@@ -42,6 +44,7 @@ export default {
 }
 .ingredient__info{
     display: flex;
+    align-items: center;
     margin-bottom: .5rem;
 
     &-checkbox{
